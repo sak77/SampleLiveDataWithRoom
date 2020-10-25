@@ -1,7 +1,7 @@
 package com.test.samplelivedatawithroom;
 
-import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.PrimaryKey;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
 /**
  * Created by saket.shriwas on 11/17/2017.

@@ -1,12 +1,12 @@
 package com.test.samplelivedatawithroom;
 
 import android.net.Uri;
-import android.support.design.widget.BottomSheetDialog;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.test.samplelivedatawithroom.dummy.DummyContent;
+import androidx.fragment.app.FragmentTransaction;
 
 /*
 The purpose of this app is to demonstrate the use of LiveData with Room DB
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.OnFr
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         //Add Home Fragment to Activity
         if (getSupportFragmentManager().getFragments().size()==0){
             fragmentTransaction.add(R.id.fragment_container,HomeFragment.newInstance("",""));

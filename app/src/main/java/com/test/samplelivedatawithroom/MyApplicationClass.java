@@ -1,8 +1,8 @@
 package com.test.samplelivedatawithroom;
 
 import android.app.Application;
-import android.arch.persistence.room.Room;
-import android.arch.persistence.room.RoomDatabase;
+import androidx.room.Room;
+import androidx.room.RoomDatabase;
 
 /**
  * Created by saket.shriwas on 11/17/2017.
